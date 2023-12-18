@@ -3,28 +3,31 @@ import HookUseEffect from "./components/HookUseEffect";
 import { MyContextProvider } from "./components/contextHook/MyContext";
 import Component1 from "./components/contextHook/Component1";
 import Component2 from "./components/contextHook/Components2";
-import ClearableInput from "./components/HookUseRef";
-import Counter  from "./components/HookUseReducer";
+//import ClearableInput from "./components/HookUseRef";
+import Counter from "./components/HookUseReducer";
 import HookUseCallBack from "./components/HookUseCallBack";
+import HookUseMemo from "./components/HookUseMemo";
 
 function App() {
   return (
     <div>
-      <HookUseState/>
+      <h1>useState Hook...........</h1>
+      <HookUseState />
       <h1>Starting useEffect............</h1>
-      <HookUseEffect/>
+      <HookUseEffect />
       <h1>Starting useContext............</h1>
-
       <MyContextProvider>
-        <Component1/>
-        <Component2/>
+        <Component1 />
+        <Component2 />
       </MyContextProvider>
-      <h1>Starting useRef .......</h1>
-      <ClearableInput/>
+      <h1>Starting useRef........</h1>
+      {/* <ClearableInput /> */}
       <h1>Starting useReducer.............</h1>
-      <Counter/>
+      <Counter />
       <h1>Starting useCallBack.........</h1>
-      <HookUseCallBack/>
+      <HookUseCallBack />
+      <h1>Starting useMemo.............</h1>
+      <HookUseMemo/>
     </div>
   );
 }
