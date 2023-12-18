@@ -5,6 +5,7 @@ import Component1 from "./components/contextHook/Component1";
 import Component2 from "./components/contextHook/Components2";
 import ClearableInput from "./components/HookUseRef";
 import Counter  from "./components/HookUseReducer";
+import HookUseCallBack from "./components/HookUseCallBack";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <ClearableInput/>
       <h1>Starting useReducer.............</h1>
       <Counter/>
+      <h1>Starting useCallBack.........</h1>
+      <HookUseCallBack/>
     </div>
   );
 }
