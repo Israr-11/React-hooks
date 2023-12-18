@@ -3,7 +3,8 @@ import HookUseEffect from "./components/HookUseEffect";
 import { MyContextProvider } from "./components/contextHook/MyContext";
 import Component1 from "./components/contextHook/Component1";
 import Component2 from "./components/contextHook/Components2";
-//import HookUseRef from "./components/HookUseRef";
+import ClearableInput from "./components/HookUseRef";
+import Counter  from "./components/HookUseReducer";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Component1/>
         <Component2/>
       </MyContextProvider>
+      <h1>Starting useRef .......</h1>
+      <ClearableInput/>
+      <h1>Starting useReducer.............</h1>
+      <Counter/>
     </div>
   );
 }
